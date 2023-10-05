@@ -591,4 +591,7 @@ bindsym $mod+t exec rofi -show window \
 #		-config ~/.config/rofi/rofidmenu.rasi
 
 #Comomando para iniciar wg en startup
-exec --no-startup-id systemctl start systemd-resolved.service && systemctl enable systemd-resolved.service
+exec --no-startup-id systemctl start systemd-resolved.service && systemctl enable systemd-resolved.service && wg-quick up Portatil
+
+#Iniciar bluetooth
+exec --no-startup-id systemctl start bluetooth
